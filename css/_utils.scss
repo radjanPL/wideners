@@ -1,0 +1,23 @@
+.visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.none-visible {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.hide-on-mobile {
+    @media(max-width: 768px) {
+        display: none !important;
+    }
+}

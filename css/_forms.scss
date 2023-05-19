@@ -1,0 +1,81 @@
+input[type="color"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="month"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="text"], 
+input[type="time"], 
+input[type="url"], 
+input[type="week"], 
+input:not([type]), 
+textarea {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 14px;
+    line-height: 44px;
+    border: 1px solid var(--black);
+    outline: none;
+    background: none;
+    font-size: .8em;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-align: center; 
+    color: var(--black);
+}
+
+#searchform {
+    position: relative;
+}
+
+.widget_search input[type="text"]::placeholder {
+    text-align: left;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    display: block;
+    background-color: var(--dark-red);
+    color: #FEFEFE;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid var(--dark-red);
+    line-height: 44px;
+    text-align: center;
+    outline: 0;
+    text-transform: uppercase;
+    font-size: .85em;
+    margin-top: -1px;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+
+    &:hover {
+        color: var(--black);
+        background: var(--gray-light);
+        border-color: var(--black);
+    }
+}
+
+#searchform input[type=submit] {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 44px;
+    height: 44px;
+    background: url('../img/search.png') no-repeat;
+    background-position: center;
+    border: none;
+}

@@ -1,0 +1,16 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --navy: #0d223f;
+  --navy-light: #dce5ef;
+  --dark-red: #981818;
+  --gray-light: #f0f0f0;
+  --space: 2rem;
+  --space-xs: calc(var(--space) / 3);
+  --space-sm: calc(var(--space) / 2);
+  --space-md: calc(var(--space) * 2);
+}
+
+::selection {
+  background-color: #dce5ef;
+}

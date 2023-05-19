@@ -1,0 +1,17 @@
+.more-link {
+  color: var(--navy);
+  background-color: var(--navy-light);
+  padding: 5px 23px;
+  border-radius: 2px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: table;
+  margin: 1em 0 .5em auto;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+}
+
+.more-link:hover {
+  border-color: var(--navy);
+}

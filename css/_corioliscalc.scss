@@ -1,0 +1,139 @@
+.b-coriolis-calculator {
+    padding-bottom: 15px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 26px;
+        padding-top: 30px;
+    }
+}
+
+.b-coriolis-calculator_input {
+    margin-bottom: 15px;
+    display: flex;
+
+    input {
+        width: 90%;
+        border-top: solid 1px #e0e0e0;
+        border-right: solid 1px #e0e0e0;
+        border-bottom: solid 1px #e0e0e0;
+        text-align: right;
+        background-color: #F0F0F0;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &::placeholder {
+            opacity: 1;
+            letter-spacing: .5px;
+            text-align: right;
+            color: inherit;
+        }
+    }  
+}
+
+.b-coriolis-calculator_input-hemisphere {
+    width: 45%;
+    padding: 0 14px;
+    padding-top: 10px;
+    font-size: 14px;
+    border-top: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+    background-color: #F0F0F0;
+}
+
+.b-coriolis-calculator-icon {
+    display: inline-block;
+    background-color: #0d223f;
+    width: 120px;
+    height: 46px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 0;
+    background-size: 50px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &--weight {
+        background-image: url('../img/Bullet_Weight__Grain_.png');
+    }
+
+    &--velocity {
+        background-image: url('../img/Velocity.png');
+    }
+    
+    &--latitude {
+        background-image: url('../img/Latitude.png');
+    }
+
+    svg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.b-coriolis-calculator-description {
+    text-align: left;
+    display: inline-block;
+
+    span, svg {
+        line-height: 24px;
+        vertical-align: middle;
+    }
+
+    span {
+        padding-left: 10px;
+    }
+}
+
+.b-coriolis-calculator-icon svg, 
+.b-coriolis-calculator-description svg {
+    width: 36px;
+    height: 36px;
+}
+
+#coriolis-hemisphere-south {
+    display: none;
+}
+
+.b-coriolis-calculator_action {
+    background-color: #0d223f;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    vertical-align: middle;
+    display: block;
+
+    .b-coriolis-calculator-description span {
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #1a4682;
+    }
+}
+
+.b-coriolis-calculator-icon svg path, 
+.b-coriolis-calculator-description svg path {
+    fill: #fff;
+}
+
+.b-coriolis-calculator_output {
+    text-align: right;
+    background-color: #F0F0F0;
+    padding: 15px 20px;
+    display: flex;
+    margin-bottom: 15px;
+    color: #0d223f;
+    
+    div {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+.b-coriolis-calculator-output-field {
+    text-align: right;
+    font-weight: bold;
+}

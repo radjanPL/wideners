@@ -1,5 +1,7 @@
 # Wideners Blog Theme
 
+Custom Wordpress Theme.
+
 ## Editing styles
 
 Theme is using css/style.min.css file.
